@@ -1,0 +1,11 @@
+@import './base.css';
+
+/* components */
+@import './components/uppy.css';
+@import './components/animation.css';
+@import './components/kyvg_vue3_notification.css';
+@import './components/navigation.css';
+@import './components/nouislider.css';
+@import './components/floatingVue.css';
+@import './components/vueform_multiselect.css';
+

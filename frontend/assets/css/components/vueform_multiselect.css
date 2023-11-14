@@ -1,0 +1,61 @@
+@import '@vueform/multiselect/themes/default';
+
+:root {
+	--ms-radius: var(--rounded-btn, 0.5rem);
+	
+	--ms-border-color: hsl(var(--bc) / .2);
+	--ms-border-width: 1px;
+	--ms-border-width-active: 1px;
+
+	--ms-bg: hsl(var(--b1));
+	--ms-bg-disabled: hsl(var(--b2));
+	--ms-py: 0rem;
+	--ms-px: 0rem;
+	--ms-ring-width: 0px;
+	--ms-ring-color: #10B98130;
+	--ms-placeholder-color: #9CA3AF;
+	--ms-max-height: 10rem;
+	
+	--ms-spinner-color: #10B981;
+	--ms-caret-color: #999999;
+	--ms-clear-color: #999999;
+	--ms-clear-color-hover: #000000;
+
+	--ms-dropdown-bg: #fff;
+	--ms-dropdown-border-color: rgba(60, 60, 60, 0.26);
+	--ms-dropdown-border-width: 1px;
+
+	--ms-option-bg-pointed: hsl(var(--b3));
+	--ms-option-color-pointed: hsl(var(--bc));
+	--ms-option-bg-selected: var(--ms-dropdown-bg);
+	--ms-option-color-selected: var(--ms-option-color-pointed);
+	--ms-option-bg-selected-pointed: var(--ms-option-bg-pointed);
+	--ms-option-color-selected-pointed: var(--ms-option-color-pointed);
+
+	--ms-empty-color: #4B5563;
+}
+
+.dark:root {
+	--ms-dropdown-bg: hsl(var(--b1));
+	--ms-dropdown-border-color: rgba(60, 60, 60, 1);
+	--ms-clear-color-hover: #ddd;
+}
+
+.multiselect {
+	@apply p-0;
+	.multiselect-wrapper {
+		@apply h-full;
+		.multiselect-search, .multiselect-placeholder, .multiselect-single-label {
+			@apply ps-4;
+		}
+		.multiselect-caret {
+			@apply pe-10;
+		}
+	}
+	.multiselect-dropdown {
+		@apply rounded-md border-t-0 rounded-t-none rounded-b-lg;
+	}
+}
+
+
+

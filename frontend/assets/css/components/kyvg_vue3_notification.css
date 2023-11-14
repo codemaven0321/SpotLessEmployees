@@ -1,0 +1,14 @@
+.vue-notification-group {
+	@apply p-2 m-1.5;
+	max-width: 350px;
+}
+
+.vue-notification {
+	@apply rounded-lg !text-base !border-l-0 !p-5;
+	.notification-title { @apply !font-normal; }
+
+	@apply text-white !bg-info;
+	&.success { @apply !bg-success; }
+	&.warning { @apply !bg-yellow-600 !text-black; }
+	&.error   { @apply !bg-error; }
+}

@@ -1,0 +1,11 @@
+
+.navigation.mini{
+	@apply flex justify-center md:gap-x-4 flex-wrap mt-4 text-sm font-medium text-center text-gray-500 dark:text-gray-400;
+	a, button {
+		@apply inline-block py-[.4rem] text-[1.07rem] font-bold px-4 rounded-lg;
+		@apply text-gray-800 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400;
+		&.active {
+			@apply bg-emerald-600 text-white;
+		}
+	}
+}

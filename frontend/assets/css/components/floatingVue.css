@@ -1,0 +1,36 @@
+@import "floating-vue/dist/style.css";
+
+.v-popper--theme-tooltip {
+	.v-popper__inner { @apply text-black dark:text-white bg-slate-100 dark:bg-slate-500; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply border-slate-100 dark:border-slate-500; }
+}
+
+.v-popper--theme-tooltip-primary {
+	.v-popper__inner { @apply !bg-primary text-white; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-primary; }
+}
+
+.v-popper--theme-tooltip-secondary {
+	.v-popper__inner { @apply !bg-secondary text-white; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-secondary; }
+}
+
+.v-popper--theme-tooltip-info {
+	.v-popper__inner { @apply !bg-info dark:text-black; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-info; }
+}
+
+.v-popper--theme-tooltip-warning {
+	.v-popper__inner { @apply !bg-warning; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-warning; }
+}
+
+.v-popper--theme-tooltip-error {
+	.v-popper__inner { @apply !bg-error; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-error; }
+}
+
+.v-popper--theme-tooltip-success {
+	.v-popper__inner { @apply !bg-success dark:text-black; }
+	.v-popper__arrow-inner, .v-popper__arrow-outer { @apply !border-success; }
+}

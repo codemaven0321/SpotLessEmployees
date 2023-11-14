@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+	@apply min-h-screen;
+	transition: filter .5s;
+}
+
+input {
+	@apply autofill:bg-none;
+}
+
+.card-shadow {
+	@apply shadow-md shadow-gray-400 dark:shadow-md dark:shadow-black/70 hover:!shadow-none transition-[box-shadow] duration-300;
+}
+
+
+.wavy-link {
+	@apply decoration-wavy cursor-pointer text-emerald-500 hover:underline hover:text-emerald-400;
+}
